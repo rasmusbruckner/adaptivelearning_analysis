@@ -1,0 +1,87 @@
+{
+	"subj_num": {
+		"LongName": "subject number",
+		"Description": "Numbers start from 1 to maximum number of subjects",
+		"Units": "integers"
+	},
+	"age_group": {
+		"LongName": "age group",
+		"Description": "Numerical coding of the age group",
+		"levels": [
+			"1: Children",
+			"3: Younger adults",
+			"4: Older adults"
+		]
+	},
+	"new_block": {
+		"LongName": "new block",
+		"Description": "Indicates beginning of new block",
+		"levels": [
+			"0: no new block",
+			"1: new block"
+		]
+	},
+	"x_t": {
+		"LongName": "x_t",
+		"Description": "Current outcome",
+		"Units": "integers"
+	},
+	"b_t": {
+		"LongName": "b_t",
+		"Description": "Current prediction",
+		"Units": "integers"
+	},
+	"mu_t": {
+		"LongName": "mu_t",
+		"Description": "Mean of the outcome generating distribution (helicopter location)",
+		"Units": "integers"
+	},
+	"c_t": {
+		"LongName": "Changepoint",
+		"Description": "Indicates if changepoint occurred",
+		"levels": [
+			"0: No changepoint",
+			"1: Changepoint"
+		]
+	},
+	"r_t": {
+		"LongName": "r_t",
+		"Description": "Coin value",
+		"levels": [
+			"0: No reward",
+			"1: Reward"
+		]
+	},
+	"sigma": {
+		"LongName": "sigma",
+		"Description": "Standard deviation of Gaussian noise in the environment",
+		"levels": [
+			"10: Low noise",
+			"17.5: Medium noise",
+			"25: High noise"
+		]
+	},
+	"v_t": {
+		"LongName": "Helicopter visibility",
+		"Description": "Indicates if catch trial occurred",
+		"levels": [
+			"0: No catch trial",
+			"1: Catch trial"
+		]
+	},
+	"cond": {
+		"LongName": "Condition",
+		"Description": "Indicates current condition",
+		"levels": [
+			"main_noPush: Stable bucket condition",
+			"main_push: shifting bucket condition "
+		]
+	},
+	"z_t": {
+		"LongName": "Trial initial bucket location",
+		"Description": "Indicates starting position of the bucket",
+		"Units": [
+			"integers"
+		]
+	}
+}
