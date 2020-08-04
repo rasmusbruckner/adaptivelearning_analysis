@@ -4,8 +4,8 @@ This repository contains the Python data analysis code.
 
 The code was used for the preprint
 
-* **Bruckner, R., Nassar, M. R., Li, S.-C. & Eppinger, B. (2020). 
-Default beliefs guide learning in children and older adults. PsyArXiv**
+* **Bruckner, R., Nassar, M. R., Li, S.-C., & Eppinger, B. (2020). 
+Default beliefs guide learning in children and older adults. [PsyArXiv](https://psyarxiv.com/nh9bq/)**
 
 ## Questions?
 
