@@ -21,7 +21,7 @@ def task_agent_int_satisficing(df, agent, agent_vars, sel_coeffs):
 
     # Extract and initialize relevant variables
     n_trials = len(df)  # number of trials
-    delta = np.full(len(df), np.nan)  # Prediction error
+    delta = np.full(len(df), np.nan)  # prediction error
     high_val = df['r_t'] == 1  # indicates high value trials
     mu = np.full([n_trials], np.nan)  # inferred mean of the outcome-generating distribution
     a_hat = np.full(n_trials, np.nan)  # predicted update according to reduced Bayesian model

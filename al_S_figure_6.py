@@ -1,4 +1,4 @@
-""" SM Figure 1
+""" Figure S6
 
 1. Load and prepare data
 2. Prepare figure
@@ -42,15 +42,15 @@ df_push = df_2[df_2['cond'] == 'main_push']
 
 # Perseveration-frequency differences between high- and low-reward condition
 voi = 2
-_, fig_SM_1_a_desc, _, fig_SM_1_a_zero_stat = get_cond_diff(low, high, voi)
-fig_SM_1_a_zero_stat.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_SM_1_a_zero_stat.csv')
-fig_SM_1_a_desc.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_SM_1_a_desc.csv')
+_, fig_S_6_a_desc, _, fig_S_6_a_zero_stat = get_cond_diff(low, high, voi)
+fig_S_6_a_zero_stat.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_S_6_a_zero_stat.csv')
+fig_S_6_a_desc.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_S_6_a_desc.csv')
 
 # Estimation-error differences between high- and low-reward condition
 voi = 1
-_, fig_SM_1_b_desc, _, fig_SM_1_b_zero_stat = get_cond_diff(low, high, voi)
-fig_SM_1_b_zero_stat.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_SM_1_b_zero_stat.csv')
-fig_SM_1_b_desc.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_SM_1_b_desc.csv')
+_, fig_S_6_b_desc, _, fig_S_6_b_zero_stat = get_cond_diff(low, high, voi)
+fig_S_6_b_zero_stat.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_S_6_b_zero_stat.csv')
+fig_S_6_b_desc.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_S_6_b_desc.csv')
 
 # Perseveration in high- and low reward condition
 voi = 2
@@ -190,7 +190,7 @@ sns.despine()
 texts = ['a', 'b', 'c', 'd', 'e', 'f']  # label letters
 label_subplots(f, texts, x_offset=0.08, y_offset=0.0)
 
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_1.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_6.pdf"
 plt.savefig(savename, transparent=True, dpi=400)
 
 # Show figure

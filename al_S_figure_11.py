@@ -1,4 +1,4 @@
-""" SM Figure 5
+""" Figure S11
 
 1. Load and prepare data
 2. Prepare figure
@@ -105,7 +105,7 @@ texts = ['a', 'b']  # label letters
 label_subplots(f, texts, x_offset=0.08, y_offset=0.0)
 
 # Save figure for manuscript
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_5.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_11.pdf"
 plt.savefig(savename, transparent=True, dpi=400)
 
 # Show figure

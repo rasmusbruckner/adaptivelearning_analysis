@@ -1,4 +1,4 @@
-""" SM Figure 10
+""" Figure S13
 
  1. Load data
  2. Prepare figure
@@ -17,6 +17,7 @@ import seaborn as sns
 import os
 from al_plot_utils import cm2inch, label_subplots, latex_plt, plot_arrow
 from al_simulation_satisficing import simulation_satisficing
+
 
 # Update matplotlib to use Latex and to change some defaults
 os.environ["PATH"] += os.pathsep + '/usr/local/texlive/2016/bin/x86_64-darwin'
@@ -207,7 +208,7 @@ texts = ['a', 'b', 'c', 'd', 'e']
 label_subplots(f, texts, x_offset=0.08, y_offset=0.0)
 
 # Save figure
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_10.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_13.pdf"
 plt.savefig(savename, transparent=True, dpi=400)
 
 plt.show()

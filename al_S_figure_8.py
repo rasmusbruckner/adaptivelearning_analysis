@@ -1,4 +1,4 @@
-""" SM Figure 7
+""" Figure S8
 
     1. Load data
     2. Prepare figure
@@ -136,7 +136,7 @@ plt.ylabel('Recovered parameter')
 # sigma_H
 plt.subplot(339)
 plt.plot(true_params['sigma_H'].values, param_recov['sigma_H'].values, '.', color='k')
-plt.title('Catch-trial')
+plt.title('Catch trial')
 plt.xlim(-1, 33)
 plt.ylim(-1, 33)
 plt.xlabel('True parameter')
@@ -153,7 +153,7 @@ sns.despine()
 texts = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']  # label letters
 label_subplots(f, texts, x_offset=0.07, y_offset=0.01)
 
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_7.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_8.pdf"
 plt.savefig(savename)
 
 # Show figure

@@ -1,4 +1,4 @@
-""" SM Figure 3
+""" Figure S4
 
 1. Load data
 2. Run statistical tests
@@ -40,34 +40,34 @@ print('\n\nUncertainty-underestimation parameter\n')
 median_u, q1_u, q3_u, p_u, stat_u = get_stats(model_results, 1, 'u')
 
 # Create data frames to save statistics for Latex manuscript
-fig_SM_3_desc = pd.DataFrame()
-fig_SM_3_stat = pd.DataFrame()
+fig_S_4_desc = pd.DataFrame()
+fig_S_4_stat = pd.DataFrame()
 
 # Median parameter estimates
-fig_SM_3_desc['median_u'] = round(median_u, 3)
+fig_S_4_desc['median_u'] = round(median_u, 3)
 
 # First quartile
-fig_SM_3_desc['q1_u'] = round(q1_u, 3)
+fig_S_4_desc['q1_u'] = round(q1_u, 3)
 
 # Third quartile
-fig_SM_3_desc['q3_u'] = round(q3_u, 3)
+fig_S_4_desc['q3_u'] = round(q3_u, 3)
 
 # Rename index and groups
-fig_SM_3_desc.index.name = 'age_group'
-fig_SM_3_desc = fig_SM_3_desc.rename({1: 'ch', 2: 'ad', 3: 'ya', 4: 'oa'}, axis='index')
+fig_S_4_desc.index.name = 'age_group'
+fig_S_4_desc = fig_S_4_desc.rename({1: 'ch', 2: 'ad', 3: 'ya', 4: 'oa'}, axis='index')
 
 # P-values and test statistics
-fig_SM_3_stat['p_u'] = p_u
-fig_SM_3_stat['stat_u'] = stat_u
+fig_S_4_stat['p_u'] = p_u
+fig_S_4_stat['stat_u'] = stat_u
 
 # Rename index and tests
-fig_SM_3_stat.index.name = 'test'
-fig_SM_3_stat = fig_SM_3_stat.rename({0: 'kw', 1: 'ch_ad', 2: 'ch_ya', 3: 'ch_oa', 4: 'ad_ya', 5: 'ad_oa', 6: 'ya_oa'},
+fig_S_4_stat.index.name = 'test'
+fig_S_4_stat = fig_S_4_stat.rename({0: 'kw', 1: 'ch_ad', 2: 'ch_ya', 3: 'ch_oa', 4: 'ad_ya', 5: 'ad_oa', 6: 'ya_oa'},
                                      axis='index')
 
 # Save statistics for Latex manuscript
-fig_SM_3_desc.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_SM_3_desc.csv')
-fig_SM_3_stat.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_SM_3_stat.csv')
+fig_S_4_desc.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_S_4_desc.csv')
+fig_S_4_stat.to_csv('~/Dropbox/Apps/Overleaf/al_manuscript/al_dataframes/fig_S_4_stat.csv')
 
 # -----------------
 # 3. Prepare figure
@@ -139,7 +139,7 @@ sns.despine()
 texts = ['a', 'b', 'c', 'd', 'e', 'f', 'g']  # label letters
 label_subplots(f, texts, x_offset=0.08, y_offset=0.0)
 
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_3.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_4.pdf"
 plt.savefig(savename, transparent=True, dpi=400)
 
 # Show figure

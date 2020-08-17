@@ -1,4 +1,4 @@
-""" SM Figure 4
+""" Figure S7
 
 1. Load data
 2. Prepare figure
@@ -105,7 +105,7 @@ sns.despine()
 texts = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']  # label letters
 label_subplots(f, texts, x_offset=0.08, y_offset=0.0)
 
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_4.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_7.pdf"
 plt.savefig(savename, transparent=True, dpi=400)
 
 # Show figure

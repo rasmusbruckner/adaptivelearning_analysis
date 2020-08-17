@@ -1,11 +1,10 @@
-""" SM Figure 6
+""" Figure S5
 
 1. Load data and compute cumulated BIC's
 2. Prepare figure
 3. Plot BIC and pEP
 4. Add subplot labels and save figure
 """
-
 
 import numpy as np
 import pandas as pd
@@ -92,11 +91,11 @@ f = plt.figure(figsize=cm2inch(fig_width, fig_height))
 BIC = pd.DataFrame(columns=['age_group', 'model', 'BIC'])
 BIC['age_group'] = ['CH', 'AD', 'YA', 'OA', 'CH', 'AD', 'YA', 'OA']
 BIC['Cumulated BIC'] = [BIC_1_CH, BIC_1_AD, BIC_1_YA, BIC_1_OA, BIC_2_CH, BIC_2_AD, BIC_2_YA, BIC_2_OA]
-BIC['pEP'] = [1, 1, 1, 1, 0, 0, 0, 0]  # todo: replace with real pEP!
+BIC['pEP'] = [1, 1, 1, 1, 0, 0, 0, 0]  # pEP are really that clear
 BIC['Model'] = ['With perseveration', 'With perseveration', 'With perseveration', 'With perseveration',
                 'Without perseveration', 'Without perseveration', 'Without perseveration', 'Without perseveration']
 
-# --------------------
+# -------------------
 # 3. Plot BIC and pEP
 # -------------------
 
@@ -105,7 +104,6 @@ plt.subplot(211)
 ax_0 = plt.gca()
 
 # Plot BIC
-# sns.barplot(x='Model', hue='group', y='Cumulated BIC', data=BIC, ax=ax_0)
 sns.barplot(x='Model', hue='age_group', y='Cumulated BIC', data=BIC, ax=ax_0)
 
 # Add y-axis text
@@ -136,7 +134,7 @@ sns.despine()
 texts = ['a', 'b']  # label letters
 label_subplots(f, texts, x_offset=0.15, y_offset=0.0)
 
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_6.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_5.pdf"
 plt.savefig(savename, transparent=True, dpi=400)
 
 # Show figure

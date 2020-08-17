@@ -1,4 +1,4 @@
-""" SM Figure 9
+""" Figure S12
 
 1. Load data
 2. Differences of perseveration frequency between shifting- and stable bucket condition
@@ -109,7 +109,7 @@ plt.tight_layout()
 sns.despine()
 
 # Save figure
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_9.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_12.pdf"
 plt.savefig(savename, transparent=True, dpi=400)
 
 # Show plot

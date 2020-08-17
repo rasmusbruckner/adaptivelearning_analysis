@@ -1,11 +1,10 @@
-""" SM Figure 8
+""" Figure S9
 
     1. Load data
     2. Prepare figure
     3. Plot recovery results
     4. Add subplot labels and save figure
 """
-
 
 import numpy as np
 import pandas as pd
@@ -14,6 +13,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 from al_plot_utils import cm2inch, label_subplots, latex_plt
+
 
 # Update matplotlib to use Latex and to change some defaults
 os.environ["PATH"] += os.pathsep + '/usr/local/texlive/2016/bin/x86_64-darwin'
@@ -136,7 +136,7 @@ plt.ylabel('Recovered parameter')
 # sigma_H
 plt.subplot(339)
 plt.plot(true_params['sigma_H'].values, param_recov['sigma_H'].values, '.', color='k')
-plt.title('Catch-trial')
+plt.title('Catch trial')
 plt.xlim(-1, 33)
 plt.ylim(-1, 33)
 plt.xlabel('True parameter')
@@ -153,7 +153,7 @@ sns.despine()
 texts = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']  # label letters
 label_subplots(f, texts, x_offset=0.07, y_offset=0.01)
 
-savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_SM_figure_8.pdf"
+savename = "/" + home_dir + "/rasmus/Dropbox/Apps/Overleaf/al_manuscript/al_figures/al_S_figure_9.pdf"
 plt.savefig(savename)
 
 # Show figure
