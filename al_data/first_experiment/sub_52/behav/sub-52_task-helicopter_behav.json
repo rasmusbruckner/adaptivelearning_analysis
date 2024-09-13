@@ -1,11 +1,11 @@
 {
 	"subj_num": {
-		"LongName": "subject number",
+		"LongName": "Subject number",
 		"Description": "Numbers start from 1 to maximum number of subjects",
 		"Units": "integers"
 	},
 	"age_group": {
-		"LongName": "age group",
+		"LongName": "Age group",
 		"Description": "Numerical coding of the age group",
 		"levels": [
 			"1: Children",
@@ -15,7 +15,7 @@
 		]
 	},
 	"new_block": {
-		"LongName": "new block",
+		"LongName": "New block",
 		"Description": "Indicates beginning of new block",
 		"levels": [
 			"0: no new block",
@@ -23,22 +23,22 @@
 		]
 	},
 	"x_t": {
-		"LongName": "x_t",
+		"LongName": "Outcome",
 		"Description": "Current outcome",
 		"Units": "integers"
 	},
 	"b_t": {
-		"LongName": "b_t",
+		"LongName": "Prediction",
 		"Description": "Current prediction",
 		"Units": "integers"
 	},
 	"mu_t": {
-		"LongName": "mu_t",
+		"LongName": "Helicopter",
 		"Description": "Mean of the outcome generating distribution (helicopter location)",
 		"Units": "integers"
 	},
 	"c_t": {
-		"LongName": "Changepoint",
+		"LongName": "Change point",
 		"Description": "Indicates if changepoint occurred",
 		"levels": [
 			"0: No changepoint",
@@ -46,7 +46,7 @@
 		]
 	},
 	"r_t": {
-		"LongName": "r_t",
+		"LongName": "Reward",
 		"Description": "Coin value",
 		"levels": [
 			"0: No reward",
@@ -54,7 +54,7 @@
 		]
 	},
 	"sigma": {
-		"LongName": "sigma",
+		"LongName": "Outcome variability",
 		"Description": "Standard deviation of Gaussian noise in the environment",
 		"levels": [
 			"10: Low noise",
@@ -76,5 +76,15 @@
 		"levels": [
 			"main: The only condition in the first experiment"
 		]
+	},
+	"ip": {
+		"LongName": "Identical-pictures test",
+		"Description": "Identical-pictures data",
+		"Units": "integers"
+	},
+	"saw": {
+		"LongName": "Spot-a-word test",
+		"Description": "Spot-a-word data",
+		"Units": "integers"
 	}
 }
